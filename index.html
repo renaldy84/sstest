@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+
+<!-- if necessary: <script>jwplayer.key="your_self-hosted_license_key";</script> -->
+</head>
+<body>
+
+    <div id=player>Loading your player...</div>
+        <script src="https://content.jwplatform.com/libraries/9nvvsBy1.js"></script>
+        <!--<script src="http://localhost:8000/vendor/jwplayer-7.9.3/jwplayer.js"></script>-->
+        <script>jwplayer.key="fLQfmv80z1hysATzXKC+9eZUbw824VuwRADybmWLOP4EaqxO";</script>
+        <script>
+            
+            jwplayer("player").setup({
+
+            playlist:[
+                {
+                    file:'http://supersoccer-i.akamaihd.net/hls/live/268577/BEIN1/master.m3u8',
+                    withCredentials:true,
+                    hlshtml:true,
+                    hlsjsdefault:true,
+                }
+            ],
+            withCredentials:true,
+            hlsjsdefault:true,
+            //hlshtml:true,
+                autostart: true,
+            
+               
+            });
+        //include any of your Javascript API calls here 
+    </script>
+</body>
+</html>
